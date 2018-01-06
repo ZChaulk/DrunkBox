@@ -1,2 +1,13 @@
-<h1>Games#pkmon</h1>
-<p>Find me in app/views/games/pkmon.html.erb</p>
+<%= content_tag :body, class: "game", id: "pokemonGame" do -%>
+  <%= form_with scope: :player, local: true, class: "overlay" do |form| %>
+    <div class="playerCountSection">
+      <p>
+        <%= form.label :playerCount, "Player Count" %>
+        <%= form.text_field :playerCount %>
+      </p>
+      <p>
+        <%= form.submit :Start, id: "startButton" %>
+      </p>
+  </div>
+  <% end -%>
+<% end -%>
