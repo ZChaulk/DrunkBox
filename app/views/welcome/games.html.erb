@@ -1,5 +1,19 @@
  <h1 id="gameTitle">Drunk Box</h1>
  <div class ="gameRow">
    <%= image_tag "pokeballBtn.png", class: "gameIcon"%>
-   <%= link_to "Pokemon Drinking Game", games_pkmon_path, class: "menu_btn", id: "pokemon" %>
+   <%= button_tag "Pokemon Drinking Game", type: "button", onclick: "javascript:selectGame('pkmon')", class: "menu_btn", id: "pokemon" %>
 </div>
+
+<%= form_with scope: :player, local: true, id: "overlay" do |form| %>
+  <div id="playerCountSection">
+  <%= form.hidden_field :gameName %>
+    <p>
+      <%= form.label :playerCount, "Player Count" %>
+      <%= form.text_field :playerCount %>
+    </p>
+    <p>
+      <%= form.submit :Start, id: "startButton" %>
+      <%= button_to :Cancel, id: "cancelButton" %>
+    </p>
+</div>
+<% end -%>

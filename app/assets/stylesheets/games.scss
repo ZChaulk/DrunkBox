@@ -19,7 +19,8 @@ img.gameBoard {
   display: inline-block;
 }
 
-.overlay {
+#overlay {
+  display:none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -31,7 +32,7 @@ img.gameBoard {
   bottom: 0;
 }
 
-.playerCountSection{
+#playerCountSection{
   background-color: black;
   text-align: center;
 }

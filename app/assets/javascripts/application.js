@@ -13,3 +13,8 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+function selectGame(gameName)
+{
+   var overLay = document.getElementById("overlay");
+   overLay.style.display = "inline-block";
+}
