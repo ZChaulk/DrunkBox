@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: black;
+}
+
+h1#gameTitle {
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 3px 3px 0 0;
+}
+
+.menu_btn {
+    display: block;
+    padding: 0 0 0 0;
+    border: 1px solid #5ea617;
+    border-radius: 10px;
+    font-family: Helvetica, Sans-Serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu_btn:hover {
+    border: 1px solid red;
+}
