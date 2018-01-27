@@ -4,7 +4,7 @@
    <%= button_tag "Pokemon Drinking Game", type: "button", onclick: "javascript:selectGame('pkmon')", class: "menu_btn", id: "pokemon" %>
 </div>
 
-<%= form_with scope: :player, local: true, id: "overlay" do |form| %>
+<%= form_with scope: :game, url: game_pkmon_path, local: true, id: "overlay" do |form| %>
   <div id="playerCountSection">
   <%= form.hidden_field :gameName %>
     <p>
@@ -13,7 +13,7 @@
     </p>
     <p>
       <%= form.submit :Start, id: "startButton" %>
-      <%= button_to :Cancel, id: "cancelButton" %>
+      <%= button_tag "Cancel", type: "button", onclick: "javascript:hidePlayerCountSection()", id: "cancelButton" %>
     </p>
 </div>
 <% end -%>

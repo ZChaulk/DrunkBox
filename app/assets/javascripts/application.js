@@ -18,3 +18,9 @@ function selectGame(gameName)
    var overLay = document.getElementById("overlay");
    overLay.style.display = "inline-block";
 }
+
+function hidePlayerCountSection()
+{
+     var overLay = document.getElementById("overlay");
+     overLay.style.display = "none";
+}
