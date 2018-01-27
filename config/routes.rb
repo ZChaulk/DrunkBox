@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'game/pkmon'
   post 'game/pkmon'
+  post 'game/new'
 
   resources :game
 

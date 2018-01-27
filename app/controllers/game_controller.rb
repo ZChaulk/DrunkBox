@@ -1,6 +1,6 @@
 class GameController < ApplicationController
   def new
-    redirect_to get_url(@pkmon)
+    redirect_to game_pkmon_path
   end
   def pkmon
   end
