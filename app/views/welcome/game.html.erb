@@ -9,7 +9,7 @@
   <%= form.hidden_field :gameName, id: 'gameName' %>
     <p>
       <%= form.label :playerCount, "Player Count" %>
-      <%= form.text_field :playerCount %>
+      <%= form.text_field :playerCount, value: '2' %>
     </p>
     <p>
       <%= form.submit :Start, id: "startButton" %>
