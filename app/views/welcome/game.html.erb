@@ -6,7 +6,7 @@
 
 <%= form_with scope: :game, url: game_new_path, local: true, id: "overlay" do |form| %>
   <div id="playerCountSection">
-  <%= form.hidden_field :gameName %>
+  <%= form.hidden_field :gameName, id: 'gameName' %>
     <p>
       <%= form.label :playerCount, "Player Count" %>
       <%= form.text_field :playerCount %>

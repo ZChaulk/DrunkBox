@@ -17,6 +17,8 @@ function selectGame(gameName)
 {
    var overLay = document.getElementById("overlay");
    overLay.style.display = "inline-block";
+   var form_gameName = document.getElementById("gameName");
+   form_gameName.value = gameName
 }
 
 function hidePlayerCountSection()
